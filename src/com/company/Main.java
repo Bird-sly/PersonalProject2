@@ -19,6 +19,6 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         Wagon wagon = new Wagon(2002,"Mercedes", "C320",Color.Silver, new WagonCharacteristics(EngineType.FourCylinder,Doors.Four,WDrive.ALL_WHEEL_DRIVE,GasType.Diesel,WagonType.Hatchback));
-        wagon.toString();
+        System.out.println(wagon.toString());
     }
 }

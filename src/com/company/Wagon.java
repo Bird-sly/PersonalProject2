@@ -1,4 +1,5 @@
 package com.company;
+import java.sql.SQLOutput;
 
 public class Wagon extends Vehicle {
     WagonCharacteristics wagonCharacteristics;

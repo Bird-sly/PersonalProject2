@@ -59,7 +59,6 @@ public abstract class Vehicle implements CarProperties{
     @Override
     public String toString()
     {
-
         return("This car is a "+type + "\n It was made by " + make +"\n Its model is " + model +".\n It was build and made in  " +year +"\n The color of the car is " + color);
     }
 }

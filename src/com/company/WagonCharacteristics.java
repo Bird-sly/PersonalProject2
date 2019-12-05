@@ -1,6 +1,6 @@
 package com.company;
 
-public class WagonCharacteristics implements WagonProperties  {
+public class WagonCharacteristics implements WagonProperties {
     EngineType engineType;
     Doors noOfDoors;
     WDrive wDrive;
@@ -8,22 +8,27 @@ public class WagonCharacteristics implements WagonProperties  {
     WagonType wagonType;
 
 
-
     public void setEngineType(EngineType engineType) {
         this.engineType = engineType;
     }
+
     public void setWDrive(WDrive wheelDrive) {
         this.wDrive = wheelDrive;
     }
+
     public void setNoOfDoors(Doors noOfDoors) {
         this.noOfDoors = noOfDoors;
     }
+
     public void setGasType(GasType gasType) {
         this.gasType = gasType;
     }
-    public void setWagonType(WagonType wagonType) { this.wagonType = wagonType; }
 
-    WagonCharacteristics(EngineType engineType, Doors noOfDoors, WDrive wheelDrive, GasType gasType, WagonType wagonType){
+    public void setWagonType(WagonType wagonType) {
+        this.wagonType = wagonType;
+    }
+
+    WagonCharacteristics(EngineType engineType, Doors noOfDoors, WDrive wheelDrive, GasType gasType, WagonType wagonType) {
 
         setEngineType(engineType);
         setNoOfDoors(noOfDoors);
@@ -31,25 +36,35 @@ public class WagonCharacteristics implements WagonProperties  {
         setGasType(gasType);
         setWagonType(wagonType);
     }
+
     @Override
     public String getEngineType() {
         return null;
     }
+
     @Override
     public String getWheelDrive() {
         return null;
     }
+
     @Override
     public String getGasType() {
         return null;
     }
+
     @Override
     public int getNoOfDoors() {
         return 0;
     }
+
     @Override
-    public String getWagonType() { return null;}
+    public String getWagonType() {
+        return null;
+    }
 
 
-
+    @Override
+    public String toString() {
+        return (super.toString() + "\nThis is a " + wagonType + " wagon. \nThe wagon has " + noOfDoors + " doors \n " + "\n It is a " + wDrive + " Wagon. \n The Engine on this StationWagon is " + engineType);
+    }
 }
